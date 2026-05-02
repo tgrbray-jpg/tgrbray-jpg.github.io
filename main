@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - [University Name]</title>
+    
+    <!-- MathJax for rendering LaTeX expressions naturally -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Traditional academic typography */
+            line-height: 1.6;
+            color: #222;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        .profile-img {
+            width: 160px;
+            height: 200px;
+            object-fit: cover;
+            background-color: #f4f4f4;
+            margin-right: 2.5rem;
+            border: 1px solid #ddd;
+        }
+        .header-info h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            color: #111;
+        }
+        .header-info p {
+            margin: 0.2rem 0;
+            font-size: 1.1rem;
+        }
+        .section-title {
+            font-size: 1.4rem;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 0.4rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+        .publication-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .publication-list li {
+            margin-bottom: 1.2rem;
+            text-indent: -2rem;
+            padding-left: 2rem;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-img {
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Replace 'profile.jpg' with the actual filename of your picture -->
+        <img src="profile.jpg" alt="Picture of [Your Name]" class="profile-img">
+        <div class="header-info">
+            <h1>[Your Name]</h1>
+            <p><strong>PhD Student</strong></p>
+            <p>Department of Mathematics</p>
+            <p>[Your University Name]</p>
+            <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+        </div>
+    </header>
+
+    <section>
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a PhD student in the Department of Mathematics at [Your University Name]. 
+            My research primarily focuses on operator algebras. I am particularly interested in 
+            the structure of \( C^* \)-algebras, properties of von Neumann algebras, and related 
+            topics in functional analysis. 
+        </p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Preprints & Publications</h2>
+        <!-- The 'reversed' attribute is standard for academic sites so the newest papers are numbered highest -->
+        <ol reversed class="publication-list">
+            <li>
+                [Your Name], [Co-author Name]. 
+                <em>Title of your most recent paper or preprint</em>, preprint (2026). 
+                (<a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv:XXXX.XXXXX</a>)
+            </li>
+            <li>
+                [Your Name]. 
+                <em>Title of another paper</em>, accepted to Journal of Operator Theory (2025). 
+                (<a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv:XXXX.XXXXX</a>)
+            </li>
+        </ol>
+    </section>
+
+</body>
+</html>
